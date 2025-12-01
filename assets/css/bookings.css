@@ -1,0 +1,154 @@
+/* Bookings Styles */
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.navbar h2 {
+    color: var(--text-light);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.booking-header {
+    margin: 2rem 0;
+}
+
+.booking-header h1 {
+    color: var(--text-dark);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+    text-decoration: none;
+}
+
+.booking-form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.bike-summary {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.bike-summary h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-item span {
+    color: var(--neutral-gray);
+    font-weight: 500;
+}
+
+.summary-item strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.summary-item.total {
+    background-color: var(--neutral-light);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.summary-item.total strong {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.booking-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.form-actions .btn {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 968px) {
+    .booking-form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .bike-summary {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        flex: none;
+    }
+}
