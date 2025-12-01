@@ -61,7 +61,7 @@ $logged_in = isUserLoggedIn();
 
                 <div class="bike-price-detail">
                     <span class="price-label">Price per Day:</span>
-                    <span class="price">$<?php echo number_format($bike['price_per_day'], 2); ?></span>
+                    <span class="price">Rs<?php echo number_format($bike['price_per_day'], 2); ?></span>
                 </div>
 
                 <?php if (!empty($bike['description'])): ?>

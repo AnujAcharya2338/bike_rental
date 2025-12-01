@@ -129,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
 
                 <div class="form-group">
-                    <label for="price_per_day">Price per Day (USD) *</label>
+                    <label for="price_per_day">Price per Day (NRS) *</label>
                     <input type="number" id="price_per_day" name="price_per_day" step="0.01" min="0" value="<?php echo htmlesc($_POST['price_per_day'] ?? ''); ?>" required>
                 </div>
 

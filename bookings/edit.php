@@ -115,7 +115,7 @@ if (!empty($_POST['pickup_date']) && !empty($_POST['return_date'])) {
                 </div>
                 <div class="summary-item">
                     <span>Price per Day:</span>
-                    <strong>$<?php echo number_format($bike['price_per_day'], 2); ?></strong>
+                    <strong>Rs <?php echo number_format($bike['price_per_day'], 2); ?></strong>
                 </div>
                 <?php if ($total_price > 0): ?>
                     <div class="summary-item total">

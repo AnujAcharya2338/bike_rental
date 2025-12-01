@@ -22,8 +22,7 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;                 
-            height: 8
-            00px;    
+            height: 1000px;    
             color: white;
             padding: 12rem 1.5rem;
             text-align: center;
@@ -32,6 +31,7 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
         }
 
         .container {
+            
             max-width: 100%;
             margin: 0;
             padding: 0 ; 
@@ -63,8 +63,13 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
 
         .featured-bikes {
             margin-bottom: 4rem;
-            /* display:flex; */
+            margin: 10px;
             align-items:right;
+            padding-left:100px;
+            padding-right:100px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+            
         }
 
         .featured-bikes h2 {
@@ -133,13 +138,16 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
                 max-width: 300px;
             }
         }
+        .hi{
+            padding:150px;
+        }
     </style>
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
 
     <div class="hero">
-        <div class="container">
+        <div class="container hi">
             <h1>Your Ultimate Bike Rental Solution</h1>
             <p>Discover amazing bikes and explore your city on two wheels</p>
             <div class="hero-buttons">
@@ -169,7 +177,7 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
                             <div class="bike-info">
                                 <h3><?php echo htmlesc($bike['name']); ?></h3>
                                 <p class="text-muted"><?php echo htmlesc($bike['model']); ?></p>
-                                <p class="bike-price">$<?php echo number_format($bike['price_per_day'], 2); ?>/day</p>
+                                <p class="bike-price">Rs <?php echo number_format($bike['price_per_day'], 2); ?>/day</p>
                                 <a href="user/bike-details.php?id=<?php echo htmlesc($bike['id']); ?>" class="btn" style="display: block; text-align: center;">View Details</a>
                             </div>
                         </div>

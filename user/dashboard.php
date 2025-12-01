@@ -10,6 +10,8 @@ $user_id = $_SESSION['user_id'];
 $bookings = getUserBookings($conn, $user_id);
 ?>
 <!DOCTYPE html>
+    <?php include '../includes/header.php'; ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,17 +22,7 @@ $bookings = getUserBookings($conn, $user_id);
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container flex-between">
-            <h2>Bike Rental System</h2>
-            <div class="nav-links">
-                <a href="bikes.php">Browse Bikes</a>
-                <a href="dashboard.php" class="active">Dashboard</a>
-                <a href="logout.php">Logout</a>
-            </div>
-        </div>
-    </nav>
-
+  
     <main class="container">
         <div class="dashboard-header">
             <h1>Welcome, <?php echo htmlesc($_SESSION['user_name']); ?>!</h1>
@@ -60,13 +52,13 @@ $bookings = getUserBookings($conn, $user_id);
                                 <p><strong>Model:</strong> <?php echo htmlesc($booking['model']); ?></p>
                                 <p><strong>Pickup Date:</strong> <?php echo htmlesc($booking['pickup_date']); ?></p>
                                 <p><strong>Return Date:</strong> <?php echo htmlesc($booking['return_date']); ?></p>
-                                <p><strong>Price per Day:</strong> $<?php echo number_format($booking['price_per_day'], 2); ?></p>
+                                <p><strong>Price per Day:</strong> Rs <?php echo number_format($booking['price_per_day']); ?></p>
                                 <?php 
                                     $days = calculateRentalDays($booking['pickup_date'], $booking['return_date']);
                                     $total = calculateTotalPrice($booking['price_per_day'], $days);
                                 ?>
                                 <p><strong>Total Days:</strong> <?php echo $days; ?></p>
-                                <p><strong>Total Price:</strong> $<?php echo number_format($total, 2); ?></p>
+                                <p><strong>Total Price:</strong> Rs <?php echo number_format($total); ?></p>
 
                                 <?php if (!empty($booking['message'])): ?>
                                     <p><strong>Message:</strong> <?php echo htmlesc($booking['message']); ?></p>

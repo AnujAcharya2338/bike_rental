@@ -16,11 +16,7 @@ $logged_in = isUserLoggedIn();
 </head>
 <body>
     <?php include '../includes/header.php'; ?>
-   
-    </nav>  
-
-    <main class="container">
-
+    
         <div class="bikes-header">
             
             <h1>Available Bikes</h1>
@@ -52,7 +48,7 @@ $logged_in = isUserLoggedIn();
                             <?php endif; ?>
 
                             <div class="bike-price">
-                                <span class="price">$<?php echo number_format($bike['price_per_day'], 2); ?>/day</span>
+                                <span class="price">Rs <?php echo number_format($bike['price_per_day'], 2); ?>/day</span>
                             </div>
 
                             <div class="bike-actions">
@@ -67,9 +63,11 @@ $logged_in = isUserLoggedIn();
                     </div>
                 <?php endforeach; ?>
             </div>
-        <?php endif; ?>
-    </main>
 
-    <?php include '../includes/footer.php'; ?>
+        <?php endif; ?>
+<?php include '../includes/footer.php'; ?>
+    
+
+
 </body>
 </html>

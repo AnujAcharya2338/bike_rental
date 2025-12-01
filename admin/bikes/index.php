@@ -69,7 +69,7 @@ $bikes = getAllBikes($conn);
                                 <td><?php echo htmlesc($bike['id']); ?></td>
                                 <td><?php echo htmlesc($bike['name']); ?></td>
                                 <td><?php echo htmlesc($bike['model']); ?></td>
-                                <td>$<?php echo number_format($bike['price_per_day'], 2); ?></td>
+                                <td>Rs <?php echo number_format($bike['price_per_day'], 2); ?></td>
                                 <td>
                                     <?php 
                                     $has_image = !empty($bike['image_path']) && file_exists('../../' . $bike['image_path']);

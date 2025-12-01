@@ -1,15 +1,15 @@
-<!-- Footer -->
 <footer>
     <div class="footer-content">
+
         <!-- About Section -->
         <div class="footer-section">
             <h3>Bike Rental System</h3>
-            <p>Your trusted platform for renting bikes in your city. Experience the freedom of two-wheeled adventures.</p>
+            <p>Your trusted platform for renting bikes in your city.</p>
+
             <div class="social-links">
-                <a href="#" title="Facebook" aria-label="Facebook">f</a>
-                <a href="#" title="Twitter" aria-label="Twitter">𝕏</a>
-                <a href="#" title="Instagram" aria-label="Instagram">📷</a>
-                <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+                <a href="https://facebook.com" aria-label="Facebook">f</a>
+                <a href="https://x.com" aria-label="X">𝕏</a>
+                <a href="https://instagram.com" aria-label="Instagram">📷</a>
             </div>
         </div>
 
@@ -39,9 +39,10 @@
         <div class="footer-section">
             <h3>Contact Info</h3>
             <p><strong>Email:</strong> <a href="mailto:info@bikerental.com">info@bikerental.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-8900</a></p>
-            <p><strong>Address:</strong><br>123 Bike Street<br>Cycling City, CC 12345</p>
+            <p><strong>Phone:</strong> <a href="tel:+9779764395779">+977 9764395779</a></p>
+            <p><strong>Address:</strong><br>Bhutkhel, Kirtipur-6<br>Kathmandu</p>
         </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -54,5 +55,4 @@
     </div>
 </footer>
 
-<!-- Load footer styles -->
 <link rel="stylesheet" href="<?php echo htmlesc(BASE_URL); ?>assets/css/footer.css">

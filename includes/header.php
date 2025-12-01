@@ -16,10 +16,18 @@ $admin_logged_in = isset($_SESSION['admin_id']);
     
 </head>
 <body>
-    <style>.home-navbar {
-    background-color: #0b6efd;
+    <style>
+    
+    .home-navbar {
     padding: 1rem 2rem;
     color: white;
+    position: fixed;
+    width:100%;
+    background-color: var(--text-dark);
+    z-index: 999;
+    background:  #0D6EFD !important;
+
+
 }
 
 .flex-between {
