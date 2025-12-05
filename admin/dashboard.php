@@ -33,7 +33,6 @@ $recent_bookings = array_slice($recent_bookings, 0, 5);
     <link rel="stylesheet" href="../assets/css/admin-dashboard.css">
 </head>
 <body>
-    <!-- Admin Navigation -->
     <nav class="admin-navbar">
         <div class="container flex-between">
             <h2>Admin Panel - Bike Rental System</h2>
@@ -46,6 +45,7 @@ $recent_bookings = array_slice($recent_bookings, 0, 5);
             </div>
         </div>
     </nav>
+    <div class="all-admin">
 
     <main class="container">
         <div class="dashboard-title">
@@ -155,7 +155,7 @@ $recent_bookings = array_slice($recent_bookings, 0, 5);
             <?php endif; ?>
         </div>
     </main>
-
+                            </div>
     <?php include '../includes/footer.php'; ?>
 </body>
 </html>

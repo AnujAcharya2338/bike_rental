@@ -53,6 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="../assets/css/admin-auth.css">
 </head>
 <body>
+    <?php include '../includes/header.php'; ?>
+
     <main class="auth-container">
         <div class="auth-card">
             <h1>Admin Registration</h1>
@@ -67,8 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </ul>
                 </div>
             <?php endif; ?>
-
-            <form method="POST">
+            <form method="POST" autocomplete="off">
                 <div class="form-group">
                     <label for="name">Admin Name</label>
                     <input type="text" id="name" name="name" value="<?php echo htmlesc($_POST['name'] ?? ''); ?>" required>

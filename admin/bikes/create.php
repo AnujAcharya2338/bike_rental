@@ -95,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </nav>
 
-    <main class="container">
+    <main class="hello">
         <div class="form-header">
             <h1>Add New Bike</h1>
             <a href="index.php" class="back-link">← Back to Bikes</a>

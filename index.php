@@ -31,10 +31,9 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
         }
 
         .container {
-            
             max-width: 100%;
             margin: 0;
-            padding: 0 ; 
+            padding: 0; 
         }
 
         .hero h1 {
@@ -62,8 +61,8 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
         }
 
         .featured-bikes {
-            margin-bottom: 4rem;
-            margin: 10px;
+            margin: 50px;
+            margin-bottom: 40px;
             align-items:right;
             padding-left:100px;
             padding-right:100px;
@@ -159,7 +158,7 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
         </div>
     </div>
 
-    <main class="container">
+    
         <!-- Featured Bikes -->
         <div class="featured-bikes">
             <h2>Featured Bikes</h2>
@@ -188,8 +187,9 @@ $bikes = array_slice(getAllBikes($conn), 0, 6);
                 </div>
             <?php endif; ?>
         </div>
-    </main>
-
     <?php include 'includes/footer.php'; ?>
+
+    
+
 </body>
 </html>

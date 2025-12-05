@@ -32,7 +32,7 @@ $bikes = getAllBikes($conn);
         </div>
     </nav>
 
-    <main class="container">
+    <main class="all-index">
         <div class="section-header">
             <h1>Manage Bikes</h1>
             <a href="create.php" class="btn btn-secondary">Add New Bike</a>

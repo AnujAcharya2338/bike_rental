@@ -128,7 +128,7 @@ if (empty($errors)) {
         </div>
     </nav>
 
-    <main class="container">
+    <main class="edit-admin">
         <div class="form-header">
             <h1>Edit Bike</h1>
             <a href="index.php" class="back-link">← Back to Bikes</a>
