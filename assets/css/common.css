@@ -76,11 +76,6 @@ a:hover {
 }
 
 /* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
 
 /* Buttons */
 .btn {
@@ -95,7 +90,30 @@ a:hover {
     transition: background-color 0.3s ease;
     text-decoration: none;
 }
-
+.edit-admin{
+    margin-left: auto;
+    margin-right: auto;
+}
+.all-details{
+    margin-left: auto;
+    margin-right: auto;
+}
+.all-create{
+    margin-left: auto;
+    margin-right: auto;
+}
+.hello{
+    margin-left: auto;
+    margin-right: auto;
+}
+.all-index{
+     margin-left: 300px;;
+    margin-right: 300px;;
+}
+.all-list{
+     margin-left: 300px;;
+    margin-right: 300px;;
+}
 .btn:hover {
     background-color: var(--primary-dark);
     text-decoration: none;

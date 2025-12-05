@@ -1,5 +1,9 @@
 /* User Dashboard Styles */
-
+.all-dash{
+    margin-top:80px;
+     margin-left: 300px;
+    margin-right: 300px;
+}
 .navbar {
     background-color: var(--primary-color);
     padding: 1rem 0;

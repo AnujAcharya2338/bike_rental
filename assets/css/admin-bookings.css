@@ -7,7 +7,6 @@
 }
 
 .admin-navbar .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -63,7 +62,6 @@
 }
 
 .bookings-table-wrapper {
-    overflow-x: auto;
     margin-bottom: 3rem;
     background: white;
     border-radius: 1rem;

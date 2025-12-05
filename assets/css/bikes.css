@@ -1,6 +1,10 @@
-body{
-    margin-top:100px;
+
+.all{
+    margin-left: 300px;
+    margin-right: 300px;
+
 }
+        
 .bikes-header {
     text-align: center;
     padding: 3rem 0;
@@ -8,8 +12,7 @@ body{
     color: var(--text-light);
     border-radius: 1rem;
     margin-bottom: 3rem;
-    margin-top: 2rem;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .bikes-header h1 {
