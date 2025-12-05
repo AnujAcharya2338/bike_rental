@@ -80,7 +80,7 @@ if (!empty($_POST['pickup_date']) && !empty($_POST['return_date'])) {
         </div>
     </nav>
 
-    <main class="container">
+    <main class="all-create">
         <div class="booking-header">
             <a href="../user/bikes.php" class="back-link">← Back to Bikes</a>
             <h1>Book <?php echo htmlesc($bike['name']); ?></h1>

@@ -41,7 +41,7 @@ $logged_in = isUserLoggedIn();
         </div>
     </nav>
 
-    <main class="container">
+    <main class="all-details">
         <a href="bikes.php" class="back-link">← Back to Bikes</a>
 
         <div class="bike-detail">

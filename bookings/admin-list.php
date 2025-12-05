@@ -26,13 +26,13 @@ $bookings = getAllBookings($conn);
                 <span>Welcome, <?php echo htmlesc($_SESSION['admin_name']); ?></span>
                 <a href="../admin/dashboard.php">Dashboard</a>
                 <a href="../admin/bikes/index.php">Manage Bikes</a>
-                <a href="../admin-list.php" class="active">Bookings</a>
+                <a href="../bookings/admin-list.php" class="active">Bookings</a>
                 <a href="../admin/logout.php">Logout</a>
             </div>
         </div>
     </nav>
 
-    <main class="container">
+    <main class="all-list">
         <div class="section-header">
             <h1>Manage Bookings</h1>
             <span class="booking-count">Total: <?php echo count($bookings); ?></span>

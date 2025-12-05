@@ -23,7 +23,7 @@ $bookings = getUserBookings($conn, $user_id);
 <body>
     <!-- Navigation -->
   
-    <main class="container">
+    <div class="all-dash">
         <div class="dashboard-header">
             <h1>Welcome, <?php echo htmlesc($_SESSION['user_name']); ?>!</h1>
             <p>Manage your bike bookings here</p>
@@ -76,7 +76,7 @@ $bookings = getUserBookings($conn, $user_id);
                 </div>
             <?php endif; ?>
         </div>
-    </main>
+                                </div>
 
     <?php include '../includes/footer.php'; ?>
 </body>

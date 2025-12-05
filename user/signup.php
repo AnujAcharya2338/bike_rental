@@ -76,30 +76,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             <?php endif; ?>
 
-            <form method="POST">
+            <form method="POST" id="signupForm" autocomplete="off">
                 <div class="form-group">
                     <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" value="<?php echo htmlesc($_POST['fullname'] ?? ''); ?>" required>
+                    <input type="text" id="fullname" name="fullname" value="" autocomplete="off" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" value="<?php echo htmlesc($_POST['email'] ?? ''); ?>" required>
+                    <input type="email" id="email" name="email" value="" autocomplete="off" required>
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phone" value="<?php echo htmlesc($_POST['phone'] ?? ''); ?>" required>
+                    <input type="text" id="phone" name="phone" value="" autocomplete="off" required>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" autocomplete="new-password" required>
                 </div>
 
                 <div class="form-group">
                     <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <input type="password" id="confirm_password" name="confirm_password" autocomplete="new-password" required>
                 </div>
 
                 <button type="submit" class="btn btn-block">Sign Up</button>
@@ -112,5 +112,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 
     <?php include '../includes/footer.php'; ?>
+
+    <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+        let errors = [];
+
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+
+        // Email must start with a letter
+        if (!/^[a-zA-Z]/.test(email)) {
+            errors.push("Email must start with a letter.");
+        }
+
+        // Phone must be exactly 10 digits
+        if (!/^\d{10}$/.test(phone)) {
+            errors.push("Phone number must be exactly 10 digits.");
+        }
+
+        if (errors.length > 0) {
+            e.preventDefault(); // Prevent form submission
+            alert(errors.join("\n"));
+        }
+    });
+    </script>
 </body>
 </html>

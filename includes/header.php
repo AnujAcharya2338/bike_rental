@@ -108,7 +108,6 @@ color: #A6A6A6;
             <?php else: ?>
                 <a href="/bike-rental-system/user/login.php">User Login</a>
                 <a href="/bike-rental-system/admin/login.php">Admin Login</a>
-                <a href="/bike-rental-system/user/signup.php">Sign Up</a>
             <?php endif; ?>
         </div>
     </div>

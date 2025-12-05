@@ -16,7 +16,7 @@ $logged_in = isUserLoggedIn();
 </head>
 <body>
     <?php include '../includes/header.php'; ?>
-    
+    <div class="all">
         <div class="bikes-header">
             
             <h1>Available Bikes</h1>
@@ -64,7 +64,7 @@ $logged_in = isUserLoggedIn();
                 <?php endforeach; ?>
             </div>
 
-        <?php endif; ?>
+    </div>    <?php endif; ?>
 <?php include '../includes/footer.php'; ?>
     
 

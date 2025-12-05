@@ -46,8 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <?php include '../includes/header.php'; ?>
-
-    <main class="auth-container">
+<div class="auth-container">
+    
         <div class="auth-card">
             <h1>User Login</h1>
             <p class="auth-subtitle">Access your account</p>
@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 Don't have an account? <a href="signup.php">Sign up here</a>
             </p>
         </div>
-    </main>
+            </div>
 
     <?php include '../includes/footer.php'; ?>
 </body>
