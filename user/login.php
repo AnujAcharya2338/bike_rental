@@ -49,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <div class="auth-container">
     
         <div class="auth-card">
+
             <h1>User Login</h1>
             <p class="auth-subtitle">Access your account</p>
 

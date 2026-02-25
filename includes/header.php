@@ -25,7 +25,7 @@ $admin_logged_in = isset($_SESSION['admin_id']);
     width:100%;
     background-color: var(--text-dark);
     z-index: 999;
-    background:  #0D6EFD !important;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
 
 
 }
@@ -69,10 +69,7 @@ $admin_logged_in = isset($_SESSION['admin_id']);
 color: #A6A6A6;
 }
 
-.home-nav-links a:hover::after {
-  opacity: 1;
-  animation: shimmer111 2s linear infinite !important;
-}
+
 
 
 @keyframes shimmer111 {
@@ -92,7 +89,7 @@ color: #A6A6A6;
  <nav class="home-navbar">
     <div class="flex-between">
         <!-- Logo / Home link -->
-        <a href="/bike-rental-system/index.php"><h1>🚲 Bike Rental System</h1></a>
+        <a href="/bike-rental-system/index.php"><h1>🏍️ Bike Rental System</h1></a>
         
         <div class="home-nav-links">
             <!-- Always visible links -->
